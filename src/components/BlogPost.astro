@@ -1,0 +1,7 @@
+---
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+
+const {url, title } = Astro.props
+---
+
+<li><a href={url}>{title}</a></li>
